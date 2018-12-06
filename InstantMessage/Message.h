@@ -7,7 +7,8 @@ class Message
 {
 public:
 	Message();
-
+	//类型待修改
+	Message(int idSender, QTime date, QString type, QString content);
 	int getIdSender() const;
 	QTime getDate() const;
 	QString getType() const;
@@ -19,7 +20,6 @@ private:
 	QTime date;
 	QString type;
 	QString content;
-	int belongsToSession;
 };
 
 #endif // MESSAGE_H
